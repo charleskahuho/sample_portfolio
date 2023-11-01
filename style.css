@@ -1,0 +1,215 @@
+*{
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+.navbar{
+    text-align: center;
+    margin-bottom: 3vh;
+}
+nav{
+    margin: 27px auto 0;
+    position: relative;
+    width: 390px;
+    height: 50px;
+    background-color: none;
+    border-radius: 8px;
+    font-size: 0;
+}
+nav a{
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all 5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1){
+    width: 100px;
+}
+a:nth-child(2){
+    width: 110px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+nav a:active{
+    background-color:rgb(23, 198, 252);
+    border-radius: 8px;
+}
+nav a:hover{
+    width: 100px;
+    left: 0;
+    background-color: #1abc9c;
+    border-radius: 8px;
+}
+body{
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: rgba(38, 18, 214, 0.719);
+    color: black;
+}
+.element-container{
+    width: calc(90%);
+    height: 500px;
+    margin-left: calc(4%);
+    margin-right: calc(4%);
+    margin-bottom: 5vh;
+    border: none;
+    background-color:#0bcca2;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.home{
+    text-align: left;
+    text-justify: auto;
+    border-radius: 20px;
+    display: inline-block;
+    height: max-content;
+    font-variant: small-caps;
+}
+.internal{
+    width: calc(45%);
+    height: 90%;
+    border-radius: 8px;
+    float: left;
+    margin-left: calc(3%);
+    margin-top: calc(3%);
+    margin-bottom: calc(3%);
+    text-align: center;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.content{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+.left{
+    background-color: #DE3163;
+    text-align: center;
+}
+h1{
+    font-family: 'Roboto Slab', serif ;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 32px;
+    padding-bottom: none;
+    margin-bottom: none;
+}
+label{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+progress[value] {
+    -webkit-appearance:none;
+    -moz-appearance:none;        
+    appearance: none;
+    --w: 80%;
+    --h:30px;
+    --color:  red 0/var(--w);
+    --background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    width: var(--w);
+    height: var(--h);
+    margin: 0 10px;
+    background: var(--background);
+    border-radius: 5px;
+  }
+progress[value]::--webkit-progress-bar{
+    border-radius: 5px;
+    background: var(--background);
+}
+progress[value]::-webkit-progress-value{
+    border-radius: 5px;
+    background: var(--background);
+}
+progress[value]::-moz-progress-bar{
+    border-radius: 5px;
+    background: var(--color);
+}
+.right{
+    background-color: #ff00ff;
+}
+.btn-grad {
+    background-image: linear-gradient(to right, #ef32d9 0%, #89fffd  51%, #ef32d9  100%);
+    margin-left: 10px;
+    height: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+.leftbtn{
+    left: 0%;
+}
+.rightbtn{
+    right: 0;
+}
+.profile{
+    border-radius: 50%;
+    border: none;
+}
+.icons{
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.icons:hover{
+    --back: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%);;
+    scale: 1.4;
+    background-position: right center;
+    transition: 0.5s;
+    border-radius: initial;
+}
+.contact{
+    height: max-content;
+}
+.linkedin:hover{
+    color: blue;
+}
+.github:hover{
+    color: blueviolet;
+}
+.twitter:hover{
+    color: black;
+}
+.telegram:hover{
+    color: blue;
+}
+.whatsapp:hover{
+    color: green;
+}
+span .first{
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
